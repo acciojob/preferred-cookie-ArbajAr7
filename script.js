@@ -38,11 +38,11 @@ function applyPreferences() {
     var fontSize = getCookie('Font_Size');
     var fontColor = getCookie('Font_Color');
 
-    if (fontSize) {
+    if (fontSize && fontSize !== 'null') {
         document.getElementById('fontsize').value = fontSize;
 		document.documentElement.style.setProperty('--fontsize', fontSize + 'px');
     }
-    if (fontColor) {
+    if (fontColor && fontColor !== 'null') {
         document.getElementById('fontcolor').value = fontColor;
 		document.documentElement.style.setProperty('--fontcolor', fontColor);
     }
