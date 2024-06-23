@@ -38,12 +38,12 @@ function applyPreferences() {
     var fontSize = getCookie('Font_Size');
     var fontColor = getCookie('Font_Color');
 
-    if (fontSize) {
+    // if (fontSize) {
         document.getElementById('fontsize').value = fontSize;
-    }
-    if (fontColor) {
+    // }
+    // if (fontColor) {
         document.getElementById('fontcolor').value = fontColor;
-    }
+    // }
 }
 
 window.onload = function() {
