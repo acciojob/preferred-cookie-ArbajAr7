@@ -38,13 +38,13 @@ function applyPreferences() {
     var fontSize = getCookie('Font_Size');
     var fontColor = getCookie('Font_Color');
 
-    if (fontSize && fontSize !== 'null') {
+   if (fontSize) {
         document.getElementById('fontsize').value = fontSize;
-		document.documentElement.style.setProperty('--fontsize', fontSize + 'px');
+        document.documentElement.style.setProperty('--fontsize', fontSize + 'px');
     }
-    if (fontColor && fontColor !== 'null') {
+    if (fontColor) {
         document.getElementById('fontcolor').value = fontColor;
-		document.documentElement.style.setProperty('--fontcolor', fontColor);
+        document.documentElement.style.setProperty('--fontcolor', fontColor);
     }
 }
 
